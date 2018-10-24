@@ -12,7 +12,7 @@ import Typography from "@material-ui/core/Typography";
 import Hidden from "@material-ui/core/Hidden";
 import { getPosts } from "./actions";
 
-const styles = theme => ({
+const styles = () => ({
   card: {
     display: "flex"
   },

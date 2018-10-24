@@ -80,7 +80,12 @@ class Home extends Component {
             <Grid container>
               <Grid item md={6}>
                 <div className={classes.mainFeaturedPostContent}>
-                  <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+                  <Typography
+                    component="h1"
+                    variant="h3"
+                    color="inherit"
+                    gutterBottom
+                  >
                     {post.title}
                   </Typography>
                   <Typography variant="h5" color="inherit" paragraph>
@@ -98,10 +103,22 @@ class Home extends Component {
             <Typography variant="h6" gutterBottom>
               From the Firehose
             </Typography>
-            <Button component={Link} to="/posts" variant="contained" color="primary" className={classes.button}>
+            <Button
+              component={Link}
+              to="/posts"
+              variant="contained"
+              color="primary"
+              className={classes.button}
+            >
               Posts
             </Button>
-            <Button component={Link} to="/albums" variant="contained" color="secondary" className={classes.button}>
+            <Button
+              component={Link}
+              to="/albums"
+              variant="contained"
+              color="secondary"
+              className={classes.button}
+            >
               Albums
             </Button>
           </Grid>
@@ -113,17 +130,26 @@ class Home extends Component {
                 About
               </Typography>
               <Typography>
-                Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit
-                amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+                Etiam porta sem malesuada magna mollis euismod. Cras mattis
+                consectetur purus sit amet fermentum. Aenean lacinia bibendum
+                nulla sed consectetur.
               </Typography>
             </Paper>
-            <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
+            <Typography
+              variant="h6"
+              gutterBottom
+              className={classes.sidebarSection}
+            >
               Archives
             </Typography>
             {archives.map(archive => (
               <Typography key={archive}>{archive}</Typography>
             ))}
-            <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
+            <Typography
+              variant="h6"
+              gutterBottom
+              className={classes.sidebarSection}
+            >
               Social
             </Typography>
             {social.map(network => (

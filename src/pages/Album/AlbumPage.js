@@ -13,7 +13,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { getAlbums } from "./actions";
 
-const styles = theme => ({
+const styles = () => ({
   card: {
     height: "100%",
     display: "flex",
@@ -59,7 +59,8 @@ class PostPage extends React.Component {
                   {album.title}
                 </Typography>
                 <Typography>
-                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the
+                  content.
                 </Typography>
               </CardContent>
               <CardActions>
