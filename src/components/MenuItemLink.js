@@ -33,7 +33,7 @@ export class MenuItemLink extends Component {
   };
 
   render() {
-    const { classes, className, primaryText, leftIcon, staticContext, ...props } = this.props;
+    const { classes, className, primaryText, leftIcon, ...props } = this.props;
 
     return (
       <MenuItem

@@ -48,7 +48,6 @@ const styles = theme => ({
 });
 
 const AppBar = ({
-  children,
   classes,
   className,
   logout,
@@ -61,7 +60,12 @@ const AppBar = ({
   ...rest
 }) => (
   <Headroom>
-    <MuiAppBar className={className} color="secondary" position="static" {...rest}>
+    <MuiAppBar
+      className={className}
+      color="secondary"
+      position="static"
+      {...rest}
+    >
       <Toolbar
         disableGutters
         variant={width === "xs" ? "regular" : "dense"}
@@ -75,7 +79,9 @@ const AppBar = ({
         >
           <MenuIcon
             classes={{
-              root: open ? classes.menuButtonIconOpen : classes.menuButtonIconClosed
+              root: open
+                ? classes.menuButtonIconOpen
+                : classes.menuButtonIconClosed
             }}
           />
         </IconButton>
@@ -87,7 +93,9 @@ const AppBar = ({
         >
           {title}
         </Typography>
-        {cloneElement(userMenu, { logout: user ? <MenuItem onClick={logout}>Logout</MenuItem> : null })}
+        {cloneElement(userMenu, {
+          logout: user ? <MenuItem onClick={logout}>Logout</MenuItem> : null
+        })}
       </Toolbar>
     </MuiAppBar>
   </Headroom>

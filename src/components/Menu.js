@@ -17,14 +17,7 @@ const styles = {
   }
 };
 
-const Menu = ({
-  classes,
-  className,
-  dense,
-  onMenuClick,
-  open,
-  ...rest
-}) => (
+const Menu = ({ classes, className, dense, onMenuClick, ...rest }) => (
   <div className={classnames(classes.main, className)} {...rest}>
     <MenuItemLink
       to={`/`}

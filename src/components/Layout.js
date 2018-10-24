@@ -50,11 +50,11 @@ const styles = theme => ({
 });
 
 const sanitizeRestProps = ({
-  staticContext,
-  history,
-  location,
-  match,
-  computedMatch,
+  staticContext, // eslint-disable-line no-unused-vars
+  history, // eslint-disable-line no-unused-vars
+  location, // eslint-disable-line no-unused-vars
+  match, // eslint-disable-line no-unused-vars
+  computedMatch, // eslint-disable-line no-unused-vars
   ...props
 }) => props;
 
@@ -93,7 +93,10 @@ class Layout extends Component {
       ...props
     } = this.props;
     return (
-      <div className={classnames("layout", classes.root, className)} {...sanitizeRestProps(props)}>
+      <div
+        className={classnames("layout", classes.root, className)}
+        {...sanitizeRestProps(props)}
+      >
         <div className={classes.appFrame}>
           {createElement(appBar, { title, open, logout })}
           <main className={classes.contentWithSidebar}>
@@ -117,7 +120,10 @@ class Layout extends Component {
   }
 }
 
-const componentPropType = PropTypes.oneOfType([PropTypes.func, PropTypes.string]);
+const componentPropType = PropTypes.oneOfType([
+  PropTypes.func,
+  PropTypes.string
+]);
 
 Layout.propTypes = {
   appBar: componentPropType,
@@ -125,7 +131,11 @@ Layout.propTypes = {
   classes: PropTypes.object,
   className: PropTypes.string,
   history: PropTypes.object.isRequired,
-  logout: PropTypes.oneOfType([PropTypes.node, PropTypes.func, PropTypes.string]),
+  logout: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.func,
+    PropTypes.string
+  ]),
   menu: componentPropType,
   open: PropTypes.bool,
   sidebar: componentPropType,

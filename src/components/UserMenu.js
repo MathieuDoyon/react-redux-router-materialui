@@ -8,10 +8,8 @@ import AccountCircle from "@material-ui/icons/AccountCircle";
 class UserMenu extends React.Component {
   static propTypes = {
     children: PropTypes.node,
-    // label: PropTypes.string.isRequired,
     logout: PropTypes.node,
     icon: PropTypes.node
-    // translate: PropTypes.func.isRequired
   };
 
   static defaultProps = {
