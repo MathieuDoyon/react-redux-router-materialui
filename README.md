@@ -7,6 +7,7 @@ Below you will find some information on how to perform common tasks.
 - [Available Scripts](#available-scripts)
   - [npm start](#npm-start)
   - [npm test](#npm-test)
+  - [npm run lint:check](#npm-test)
   - [npm run build](#npm-run-build)
   - [npm run serve](#npm-run-serve)
 
@@ -24,8 +25,11 @@ You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
+Launches the test runner in the interactive watch mode.
+
+### `npm run lint:check`
+
+Run linter
 
 ### `npm run build`
 
