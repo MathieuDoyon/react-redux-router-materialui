@@ -7,7 +7,7 @@ Below you will find some information on how to perform common tasks.
 - [Available Scripts](#available-scripts)
   - [npm start](#npm-start)
   - [npm test](#npm-test)
-  - [npm run lint:check](#npm-test)
+  - [npm run lint:check](#npm-run-lintcheck)
   - [npm run build](#npm-run-build)
   - [npm run serve](#npm-run-serve)
 
