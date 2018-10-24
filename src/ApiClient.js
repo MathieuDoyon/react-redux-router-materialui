@@ -1,9 +1,7 @@
 import superagent from "superagent";
-// import getApiUrl from "./helpers";
 
 const formatUrl = path => {
   const adjustedPath = path[0] !== "/" ? `/${path}` : path;
-  // return `${getApiUrl()}${adjustedPath}`;
 
   return `https://jsonplaceholder.typicode.com${adjustedPath}`;
 };

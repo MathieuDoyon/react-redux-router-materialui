@@ -4,8 +4,6 @@ import { connect } from "react-redux";
 import compose from "recompose/compose";
 // // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// import InputAdornment from "@material-ui/core/InputAdornment";
-// import Icon from "@material-ui/core/Icon";
 import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
@@ -13,42 +11,9 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-// // @material-ui/icons
-// import Email from "@material-ui/icons/Email";
-// import People from "@material-ui/icons/People";
 import { getAlbums } from "./actions";
 
 const styles = theme => ({
-  appBar: {
-    position: "relative"
-  },
-  icon: {
-    marginRight: theme.spacing.unit * 2
-  },
-  heroUnit: {
-    backgroundColor: theme.palette.background.paper
-  },
-  heroContent: {
-    maxWidth: 600,
-    margin: "0 auto",
-    padding: `${theme.spacing.unit * 8}px 0 ${theme.spacing.unit * 6}px`
-  },
-  heroButtons: {
-    marginTop: theme.spacing.unit * 4
-  },
-  layout: {
-    width: "auto",
-    marginLeft: theme.spacing.unit * 3,
-    marginRight: theme.spacing.unit * 3,
-    [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
-      width: 1100,
-      marginLeft: "auto",
-      marginRight: "auto"
-    }
-  },
-  cardGrid: {
-    padding: `${theme.spacing.unit * 8}px 0`
-  },
   card: {
     height: "100%",
     display: "flex",
@@ -59,10 +24,6 @@ const styles = theme => ({
   },
   cardContent: {
     flexGrow: 1
-  },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing.unit * 6
   }
 });
 

@@ -46,5 +46,4 @@ export default compose(
     mapStateToProps,
     mapDispatchToProps
   )
-  // withStyles(styles)
 )(LoginPage);

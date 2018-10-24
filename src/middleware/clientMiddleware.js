@@ -1,7 +1,3 @@
-// import { BACKEND_APP_CODE } from '../constants/common';
-// import { messages } from '../notifications/NotificationActions';
-// import { authenticate as authenticateAction } from '../user/duck/actions';
-
 export default function clientMiddleware(client) {
   return ({ dispatch, getState }) => next => action => {
     // eslint-disable-line arrow-parens
@@ -33,14 +29,10 @@ export default function clientMiddleware(client) {
           //   return;
           // }
 
-          // // Show error message in UI
-          // dispatch(messages({ isError: true, error }));
-
           return next({ ...rest, error, type: FAILURE }); // eslint-disable-line consistent-return
         }
       )
       .catch(error => {
-        // dispatch(messages({ isError: true, error }));
         return next({ ...rest, error, type: FAILURE });
       });
   };
