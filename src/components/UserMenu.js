@@ -41,7 +41,7 @@ class UserMenu extends React.Component {
 
     return (
       <div>
-        <Tooltip title={"Tooltip"}>
+        <Tooltip title={"User"}>
           <IconButton
             aria-label={"Icon Button"}
             aria-owns={open ? "menu-appbar" : null}
